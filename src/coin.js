@@ -15,12 +15,11 @@ const coin = ({
         <div className="coin">
           <img src={image} alt="crypto" />
           <h3>{name}</h3>
-          <p className="coin-symbol">{symbol}</p>
         </div>
-
+        <p className="coin-symbol">{symbol}</p>
         <div className="coin-data">
           <p className="coin-price">${price}</p>
-          <p className="coin-volume">${volume.toLocaleString()}</p>
+          <p className="coin-volume">Vol: ${volume.toLocaleString()}</p>
           {priceChange < 0 ? (
             <p className="coin-percent red">
               {priceChange ? priceChange.toFixed(2) : ""}%
